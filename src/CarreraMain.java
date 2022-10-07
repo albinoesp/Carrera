@@ -19,6 +19,12 @@ public class CarreraMain {
         System.out.println("Inicio de la Carerra");
         liebre.start();
         tortuga.start();
+        try {
+            liebre.join();
+            tortuga.join();
+        } catch (InterruptedException e){
+            e.printStackTrace();
+        }
 
 
 
