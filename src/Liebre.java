@@ -35,7 +35,7 @@ public class Liebre extends Thread{
                 }
                 //De esta manera imprimimos espacios vacios si no está la liebra en esa posición
                 Posiciones(pista);
-                Victoria(posicion, ganador); //Comprobar si alcanzó la menta (posición == 70)
+                ganador = Victoria(posicion, ganador); //Comprobar si alcanzó la menta (posición == 70)
             }
             //Fin si da un gran salto
             //Inicio resbalón grande
@@ -59,7 +59,7 @@ public class Liebre extends Thread{
                     pista[posicion] = 'L';
                 }
                 Posiciones(pista);
-                Victoria(posicion, ganador);
+                ganador = Victoria(posicion, ganador);
             }
             //Fin pequeño salto
             //Inicio resbalón pequeño

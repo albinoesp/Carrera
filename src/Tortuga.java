@@ -24,7 +24,7 @@ public class Tortuga extends Thread {
                     pista[posicion] = 'T'; //Guardar nueva posición
                 }
                 Posiciones(pista);
-                Victoria(posicion, ganador); //Comprobar victoria
+                ganador = Victoria(posicion, ganador); //Comprobar victoria
             }
             //Fin avance rápido
             //Inicio resbalo
@@ -48,7 +48,7 @@ public class Tortuga extends Thread {
                     pista[posicion] = 'T'; //Imprimpir nueva posición
                 }
                 Posiciones(pista);
-                Victoria(posicion, ganador); //Comprobar victoria
+                ganador = Victoria(posicion, ganador); //Comprobar victoria
             }
         }
     }
