@@ -64,7 +64,7 @@ public class Tortuga extends Thread {
     }
 
     public static boolean Victoria(int posicion, boolean ganador) {
-        if (posicion == 70) {
+        if (posicion == 69) {
             ganador = true;
             System.out.printf("La Tortuga es la ganadora ");
         }
